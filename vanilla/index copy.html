@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+
+<title>sample HTML</title>
+</head>
+<body>
+<main id="content">
+	<form  method="post">
+		<div>
+			<label for="name">氏名</name>
+			<input id="name" required/>
+		</div>
+		<div>
+			<label for="zipcode">郵便番号</name>
+			<input id="zipcode" required pattern="^(?(^000(|-0000))|(\d{3}(|-\d{4})))$" type="text" inputmode="numeric"/>
+		</div>
+		<div>
+			<label for="age">年齢</name>
+			<input id="age" type="number" required min="0" max="120"/>
+		</div>
+		<div>
+			<label for="url">URL</name>
+			<input id="url" type="url"/>
+		</div>
+		
+		<div>
+			<input type="submit" value="送信" />
+		</div>
+	</form>
+</main>
+</body>
